@@ -3,7 +3,7 @@ import  os,time,random
 from multiprocessing import pool
 
 def run_proc(name):
-    print 'Run child process %s (%s)...' % (name, os.getpid())
+    print('Run child process %s (%s)...' % (name, os.getpid()))
     pass
 
 def long_time_task(name):

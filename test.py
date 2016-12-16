@@ -1,5 +1,5 @@
 def test_print():
-    print "test_print"
+    print("test_print")
 
 
 
@@ -7,34 +7,33 @@ def test_dir():
     d = {}
     d["name"] = "zjj"
     d["age"] = 42
-    print d
+    print(d)
     y = d
     yy = d.copy()
-    print  y
+    print (y)
     y.clear()
-    print d,"\n", y,"\n",d, yy
+    print( d,"\n", y,"\n",d, yy)
 
 def test_dir_fun():
     d = {}.fromkeys(["name","age"],"40")
-    print d
+    print (d)
     d2 = {}
-    print d2.get("name")
-    print  d.has_key("name1")
-    print d.items()
-    it = d.iteritems()
-    print it
+    print (d2.get("name"))
+    print (d.items())
+    it = d.items()
+    print (it)
     list(it)
     d.pop("name")
-    print d
+    print (d)
     d.setdefault("name","zjj")
-    print d
+    print (d)
     key,value = d.popitem()
-    print key, value
+    print (key, value)
     pass
 
 def test_os():
     import os
-    print os.name
+    print(os.name)
     pass
 
 
